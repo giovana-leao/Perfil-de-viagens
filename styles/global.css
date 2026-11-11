@@ -25,13 +25,14 @@
   --font-family: "Poppins", sans-serif;
   
   --fs-base: .875rem;
-  --fs-lg: 2rem;
+  --fs-lg: 1.5rem;
 
   --fw-base: 400;
   --fw-md: 500;
   --fw-bold: 800;
 
   --py-base: 1rem;
+  --py-md: 1.5rem;
   --py-lg: 2rem;
 
   --px-base: 1rem;
@@ -44,7 +45,7 @@
     font-family: var(--font-family);
     font-weight: var(--fw-base);
     font-size: var(--fs-base);
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-color-primary);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -56,5 +57,44 @@
   }
 
   h1 {
-    
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
   }
+
+  a {
+  text-decoration: underline;
+  color: inherit;
+}
+  a:hover {
+    color: var(--brand-color);
+  }
+
+  img,
+  picture,
+  svg,
+  video {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+  ul[role="list"] {
+  list-style: none;
+}
+
+  @media (width >= 80em) {
+  :root {
+  --fs-lg: 2rem;
+  --fs-md: 1rem;
+    
+  --py-base: 1.25rem;
+  --py-md: 1.5rem;
+  --py-lg: 2rem;
+ 
+  --px-base: 2rem;
+  
+  
+  }
+}
