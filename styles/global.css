@@ -51,7 +51,7 @@
     scroll-behavior: smooth;
   }
 
-  body{
+  body { 
     background-color: var(--background-color);
     overflow-x: hidden;
   }
@@ -64,20 +64,15 @@
   }
 
   a {
-  text-decoration: underline;
+  text-decoration: none;
   color: inherit;
 }
   a:hover {
     color: var(--brand-color);
+    text-decoration: underline;
   }
 
-  img,
-  picture,
-  svg,
-  video {
-    display: inline-block;
-    max-width: 100%;
-}
+
 
 
   ul[role="list"] {
@@ -94,7 +89,7 @@
   --py-lg: 2rem;
  
   --px-base: 2rem;
-  
+
   
   }
 }

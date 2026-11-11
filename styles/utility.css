@@ -22,7 +22,8 @@
   --max-width: 22.5rem;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
-  border: solid violet;
+  /*   border: solid violet;
+ */
 }
 
 .desktop-only {
@@ -34,17 +35,27 @@
   gap: 1rem;
 }
 
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
 @media (width >= 80em) {
   .container {
     --max-width: 80rem;
   }
   .desktop-only {
-  display: initial;
-}
+    display: initial;
+  }
   .even-columns {
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  gap: 1rem;
-}
-
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+  }
 }
