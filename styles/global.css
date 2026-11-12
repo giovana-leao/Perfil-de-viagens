@@ -61,6 +61,16 @@
   line-height: 1.25;
   color: var(--text-color-primary);
   font-weight: var(--fw-bold);
+  margin-top: .5rem;
+  
+  }
+
+  p {
+    font-size: var(--fs-base);
+    line-height: 1.7;
+    color: var(--text-color-secondary);
+    font-weight: var(--fw-base);
+    margin-top: .5rem;
   }
 
   a {
@@ -72,7 +82,13 @@
     text-decoration: underline;
   }
 
-
+  img,
+  picture,
+  svg,
+  video {
+    display: inline-block;
+    max-width: 100%;
+}
 
 
   ul[role="list"] {
@@ -88,8 +104,9 @@
   --py-md: 1.5rem;
   --py-lg: 2rem;
  
-  --px-base: 2rem;
-
-  
+  --px-base: 1rem;
+  }
+  h1 {
+    margin-top: 0;
   }
 }

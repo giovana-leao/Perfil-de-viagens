@@ -22,8 +22,8 @@
   --max-width: 22.5rem;
   width: min(var(--max-width), 100% - var(--px-base) * 2);
   margin-inline: auto;
-  /*   border: solid violet;
- */
+/*   border: solid .5px violet;
+ */ 
 }
 
 .desktop-only {
@@ -38,12 +38,20 @@
 .flex {
   display: flex;
 }
+
+.grid {
+  display: grid;
+}
+
 .items-center {
   align-items: center;
 }
 
 .gap-1 {
   gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
 }
 
 @media (width >= 80em) {
