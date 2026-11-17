@@ -1,0 +1,20 @@
+#photo-galery {
+  display: grid;
+  & img {
+    
+  }
+}
+
+@media (width >= 80em) {
+  #photo-galery {
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    & img {
+      width: 286px;
+      height: 286px;
+      object-fit: cover;
+    }
+  }
+}
