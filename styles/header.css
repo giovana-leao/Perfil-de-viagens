@@ -5,6 +5,10 @@ header {
   & nav {
     flex: 1;
 
+    & a:first-child:hover {
+      
+    }
+
   }
 
   & a:first-child {
@@ -20,6 +24,20 @@ header {
   & a:last-child {
     height: 2.5rem;
     width: 2.5rem;
+  }
+
+  & .search-icon-hover {
+    display: none;
+  }
+
+  & .search-link:hover .search-icon-default,
+  & .search-link:focus-visible .search-icon-default {
+    display: none;
+  }
+
+  & .search-link:hover .search-icon-hover,
+  & .search-link:focus-visible .search-icon-hover {
+    display: inline-block;
   }
 }
 
