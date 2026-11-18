@@ -7,14 +7,14 @@
 
 @media (width >= 80em) {
   #photo-galery {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     padding-block: 1.5rem;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
     & img {
-      width: 286px;
-      height: 286px;
-      object-fit: cover;
+      width: 17.875rem;
+      height: 17.875rem;
+      /* object-fit: cover; */
     }
   }
 }

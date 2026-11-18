@@ -1,0 +1,26 @@
+#footer {
+  font-family: var(--font-family);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color-secondary);
+
+  & span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--text-color-secondary);
+  }
+}
+@media (width >= 80em) {
+  #footer {
+    display: flex;
+    padding-inline: var(--px-lg);
+    padding-block: var(--py-md);
+    & span{
+
+    margin-right: auto;
+    }
+  }
+}
