@@ -4,11 +4,6 @@ header {
 
   & nav {
     flex: 1;
-
-    & a:first-child:hover {
-      
-    }
-
   }
 
   & a:first-child {
